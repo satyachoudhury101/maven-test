@@ -7,7 +7,7 @@ pipeline {
     steps {
 	 withSonarQubeEnv('SonarQubeServer')
 	 {
-	  sh "mvn clean package sonar:sonar -Dsonar.projectKey=jenkins-project1 -Dsonar.projectName='jenkins-project1'"
+	  sh "mvn clean package sonar:sonar -Dsonar.projectKey=TokenSonarJenkinsProject1 -Dsonar.projectName='SonarJenkinsProject'"
 	 }
 	}
   }
